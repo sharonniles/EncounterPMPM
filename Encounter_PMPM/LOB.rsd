@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="LOB">
+    <Query>
+      <DataSourceReference>ACTY_Boxcar</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@ClientDB">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT DISTINCT hp.COMPANY_ID, hp.LOBCODE, REPLACE(cc.DESCRIPTION, 'INSURANCE', '') AS DESCRIPTION
+FROM            ECD.dbo.HP_CONTRACTS_VS AS hp INNER JOIN
+                         ECD.dbo.COMMON_CODES_V AS cc ON hp.LOBCODE = cc.CODE
+WHERE        (cc.CATEGORY_NAME = 'LOB') AND (hp.COMPANY_ID = @ClientDB)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="COMPANY_ID">
+        <DataField>COMPANY_ID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LOBCODE">
+        <DataField>LOBCODE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="description">
+        <DataField>DESCRIPTION</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

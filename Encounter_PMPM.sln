@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Encounter_PMPM", "Encounter_PMPM\Encounter_PMPM.rptproj", "{728D0EBD-A298-4C6F-99DD-ED15B802A012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.Debug|Default.ActiveCfg = Debug
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.Debug|Default.Build.0 = Debug
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.Debug|Default.Deploy.0 = Debug
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.DebugLocal|Default.Build.0 = DebugLocal
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.Release|Default.ActiveCfg = Release
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.Release|Default.Build.0 = Release
+		{728D0EBD-A298-4C6F-99DD-ED15B802A012}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2AD37BF-7EA9-4F4E-862E-296579A50566}
+	EndGlobalSection
+EndGlobal
